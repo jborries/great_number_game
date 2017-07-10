@@ -1,0 +1,20 @@
+
+.wrong {
+   height: 75px;
+   width: 100px;
+   background-color: red;
+   margin-bottom: 10px;
+   padding-top: 3px;
+}
+
+.correct {
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+h2 {
+    text-align: center;
+}

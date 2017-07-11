@@ -4,14 +4,17 @@
   },
   "env": {
     "NPM_CONFIG_PRODUCTION": {
-      "required": true
+      "required": false
     }
   },
+
   "formation": {
   },
+
   "addons": [
 
   ],
+
   "buildpacks": [
     {
       "url": "heroku/nodejs"

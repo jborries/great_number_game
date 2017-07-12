@@ -11,7 +11,9 @@ app.use(express.static(path.join(__dirname, './static')));
 app.use(session({secret: 'secretpassword'}));
 app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
-//becomeintrinsictothewiderdialect
+//set port to liste to for heroku deployment
+app.set('port', (process.env.PORT || 5000));
+
 // Routes
 //Test
 // Root Request
@@ -50,6 +52,6 @@ app.get('/reset', function(req, res) {
 })
 
 // Setting our Server to Listen on Port: 8000
-app.listen(8000, function() {
-    console.log("listening on port 8000");
+//app.listen(8000, function() {
+  //  console.log("listening on port 8000");
 })

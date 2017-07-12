@@ -11,8 +11,10 @@ app.use(express.static(path.join(__dirname, './static')));
 app.use(session({secret: 'secretpassword'}));
 app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
-//set port to liste to for heroku deployment
-app.set('port', (process.env.PORT || 5000));
+//set port to listen to for heroku deployment
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 // Routes
 //Test

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "engines": {
     "node": "6.11.0",
-     "npm": "5.2.0"
-},
+    "npm": "5.2.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "ejs": "^2.5.6",
+    "body-parser": "1.17.2",
+    "ejs": "2.5.6",
     "express": "4.15.3",
-    "express-session": "^1.15.3"
+    "express-session": "1.15.3"
   }
 }

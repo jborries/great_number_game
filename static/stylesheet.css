@@ -1,5 +1,6 @@
 
 .wrong {
+   border-radius: 5px;
    height: 75px;
    width: 100px;
    background-color: red;
@@ -8,11 +9,16 @@
 }
 
 .correct {
-    height: 100px;
+    border-radius: 5px;
+    height: 1215x;
     width: 200px;
-    background-color: green;
+    background-color: #218838;
     margin-bottom: 10px;
     padding-top: 3px;
+}
+
+.winner {
+    color: white;
 }
 
 h2 {

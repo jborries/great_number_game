@@ -4,17 +4,21 @@
     <title>Great Number Game</title>
     <meta charset='utf-8' />
        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
   </head>
   <body>
+  <div class="container">
+      <div class="jumbotron">
     <h1>Welcome to the Jesse's Number Game!</h1>
     <p>I am thinking of a number between 1 and 100.</p>
     <p>Take a guess!</p>
     <div>
     <% if (result ===  'correct'){ %>
     <div class="correct">
-    <h2>That's right! <%= number_answer %> was the number!</h2></div><br>
+    <h2 class="winner">That's right! <%= number_answer %> was the number!</h2></div><br>
     <form action="/reset" method="GET">
-      <button type="submit" name="reset">Play again!</button>
+      <button type="submit" name="reset" class="btn btn-primary">Play again!</button>
     </form>
     <% }else{ %>
     <% if (result === 'high'){ %>
@@ -24,10 +28,12 @@
     <% } %>
     <form action="/guess" method="POST">
       <input type="text" name="guess">
-      <button type="submit">Guess this Number</button>
+      <button type="submit" class="btn btn-primary">Guess this Number</button>
     </form>
     <% } %>
     </div>
+</div> <!-- End Jumbotron -->
+</div> <!--End Container -->
   </body>
 </html>
 

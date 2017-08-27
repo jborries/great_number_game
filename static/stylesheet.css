@@ -21,6 +21,11 @@
     color: white;
 }
 
+.top-margin{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 h2 {
     text-align: center;
 }
